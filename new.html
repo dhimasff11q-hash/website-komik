@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga Updates - Tailwind Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Konfigurasi untuk mode gelap (optional, untuk konsistensi)
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-dark': '#1e1e1e', // Warna latar belakang gelap
+                        'custom-card': '#2c2c2c', // Warna kartu gelap
+                        'custom-red': '#e74c3c', // Warna merah untuk label "Latest"
+                    }
+                }
+            }
+        }
+    </script>
+    </head>
+<body class="bg-[url('https://i.pinimg.com/736x/19/00/64/1900647dcbb3540bc003e7c12deee6d2.jpg')] bg-cover bg-center bg-fixed backdrop-blur-sm text-white min-h-screen">
+
+    <header class="bg-custom-dark shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center justify-between h-16">
+                <a href="#" class="text-xl font-bold text-red-500 tracking-wider uppercase">komikdhimas</a>
+                
+                <div class="hidden md:flex space-x-6 text-sm">
+                    <a href="#" class="hover:text-red-400 transition duration-150">Pembaharuan</a>
+                    <a href="#" class="hover:text-red-400 transition duration-150">Unggulan</a>
+                    <a href="#" class="hover:text-red-400 transition duration-150">Ranking</a>
+                    <a href="#" class="hover:text-red-400 transition duration-150">Daftar Manga</a>
+                    <a href="#" class="hover:text-red-400 transition duration-150">Creators</a>
+                    <a href="#" class="hover:text-red-400 transition duration-150">Daftar Favorit</a>
+                    <a href="#" class="hover:text-red-400 transition duration-150">Tentang Kami</a>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <div class="relative hidden sm:block">
+                        <input type="text" placeholder="Cari berdasarkan judul atau ..." class="bg-gray-700 text-white p-2 rounded-full text-sm w-48 focus:w-64 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                        <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">🔍</span>
+                    </div>
+                    <select class="bg-green-700 text-white p-1 rounded text-sm focus:ring-2 focus:ring-red-500">
+                        <option>Bahasa ID</option>
+                    </select>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 cursor-pointer ">
+        
+        <div class="text-gray-400 text-sm mb-6">
+            <a href="#" class="hover:text-red-400 uppercase transition duration-150">Home</a> / <span class="text-white uppercase hover:text-red-400 transition duration-150">Updates</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            
+            <div class="lg:col-span-3 space-y-8">
+                
+                <div class="relative bg-custom-card rounded-lg overflow-hidden shadow-xl hover:scale-105 transition duration-300 ease-in-out">
+                    <div class="relative aspect-w-16 aspect-h-2">
+                        <img src="https://i.pinimg.com/736x/7d/66/38/7d663843acf410de5b27b706782bf082.jpg" alt="MARRIAGETOXIN Banner" class="w-max-25 h-25 object-cover">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-6 flex flex-col justify-end">
+                            <span class="absolute top-4 left-4 bg-custom-red text-white text-xs font-semibold px-3 py-1 rounded-full uppercase shadow-md">Latest 24 Hours</span>
+                            <h2 class="text-3xl font-bold mt-4 uppercase">MARRIAGETOXIC</h2>
+                            <p class="text-gray-300 text-sm">Dhimas / Editor idiot</p>
+                            <span class="text-gray-400 text-xs mt-1">❤️ 75.7K</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold mt-8 border-b border-gray-700 pb-2">Latest Updates</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                    
+                    <div class="group bg-custom-card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+                        <div class="relative">
+                            <img src="https://i.pinimg.com/736x/57/a1/8f/57a18f9e2e2c01594ec055a294c05806.jpg" alt="Manga Cover" class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300">
+                            <span class="absolute top-2 left-2 bg-custom-red text-white text-xs font-semibold px-1 py-0.5 rounded uppercase">Latest 24 Hours</span>
+                        </div>
+                        <div class="p-3">
+                            <h4 class="text-sm font-semibold truncate group-hover:text-red-400 transition duration-150">Blue Lock</h4>
+                            <p class="text-xs text-red-400 mt-1">#326 | 45.0K</p>
+                        </div>
+                    </div>
+                    
+                    <div class="group bg-custom-card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+                        <div class="relative">
+                            <img src="https://i.pinimg.com/736x/f6/68/a3/f668a3141dc9ccd4afb7e4545ca1cf6b.jpg" alt="Manga Cover" class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300">
+                            <span class="absolute top-2 left-2 bg-custom-red text-white text-xs font-semibold px-2 py-0.5 rounded uppercase">Latest 24 Hours</span>
+                        </div>
+                        <div class="p-3">
+                            <h4 class="text-sm font-semibold truncate group-hover:text-red-400 transition duration-150">Hunter X Hunter</h4>
+                            <p class="text-xs text-red-400 mt-1">#015 | 9.5K</p>
+                        </div>
+                    </div>
+
+                     <div class="group bg-custom-card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+                        <div class="relative">
+                            <img src="https://i.pinimg.com/736x/15/13/33/15133315ac8687d2c09d0f3674f45730.jpg" alt="Manga Cover" class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300">
+                            <span class="absolute top-2 left-2 bg-red-400 text-white text-xs font-semibold px-2 py-0.5 rounded uppercase">One-Shot</span>
+                        </div>
+                        <div class="p-3">
+                            <h4 class="text-sm font-semibold truncate group-hover:text-red-400 transition duration-150">Bleach</h4>
+                            <p class="text-xs text-red-400 mt-1">#202 | 6.8K</p>
+                        </div>
+                    </div>
+                    
+                    <div class="group bg-custom-card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+                        <div class="relative">
+                            <img src="https://i.pinimg.com/736x/f6/3d/f5/f63df569235dcf445e0e02b6ee2a6176.jpg" alt="Manga Cover" class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300">
+                            <span class="absolute top-2 left-2 bg-red-400 text-white text-xs font-semibold px-2 py-0.5 rounded uppercase">ILT</span>
+                        </div>
+                        <div class="p-3">
+                            <h4 class="text-sm font-semibold truncate group-hover:text-red-400 transition duration-150">Spy x Family</h4>
+                            <p class="text-xs text-red-400 mt-1">#217 | 33.4K</p>
+                        </div>
+                    </div>
+
+                    <div class="group bg-custom-card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+                        <div class="relative">
+                            <img src="https://i.pinimg.com/1200x/22/56/57/225657927df68b599aae633fa2ea4e23.jpg" alt="Manga Cover" class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300">
+                            <span class="absolute top-2 left-2 bg-red-400 text-white text-xs font-semibold px-2 py-0.5 rounded uppercase">ILT</span>
+                        </div>
+                        <div class="p-3">
+                            <h4 class="text-sm font-semibold truncate group-hover:text-red-400 transition duration-150 mt-2">Fairy Tail</h4>
+                            <p class="text-xs text-red-400 mt-2">#037 | 96.9K</p>
+                        </div>
+                    </div>
+
+                    </div>
+                
+            </div>
+
+            <aside class="lg:col-span-1 space-y-8">
+                
+                <div class="bg-custom-card p-4 rounded-lg shadow-md">
+                    <h4 class="text-lg font-semibold mb-3 border-b border-gray-700 pb-2">Official SNS Accounts</h4>
+                    <div class="flex space-x-3 justify-center">
+                        <a href="#" class="bg-blue-600 p-2 rounded-full hover:bg-blue-700 transition duration-150">
+                            <span class="w-6 h-6 inline-block">🐦</span> 
+                        </a>
+                         <a href="#" class="bg-blue-800 p-2 rounded-full hover:bg-blue-900 transition duration-150">
+                            <span class="w-6 h-6 inline-block">📘</span> 
+                        </a>
+                        <a href="#" class="bg-pink-600 p-2 rounded-full hover:bg-pink-700 transition duration-150">
+                            <span class="w-6 h-6 inline-block">📷</span> 
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-custom-card p-4 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center mb-4 border-b border-gray-700 pb-2">
+                        <h4 class="text-lg font-semibold hover:text-red-500 transition duration-150">Paling Dilihat</h4>
+                        <a href="#" class="text-sm text-red-450 hover:text-red-500 transition duration-150">Lihat Semua ❯</a>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex space-x-3 items-start hover:bg-gray-700 p-2 -m-2 rounded transition duration-150">
+                            <img src="https://i.pinimg.com/736x/64/0e/79/640e7957a8fda65e6dbd2e2721c6b5e1.jpg" alt="One Piece" class="w-12 h-17 object-cover rounded-md flex-shrink-0">
+                            <div>
+                                <h5 class="text-sm font-medium leading-tight">One Piece</h5>
+                                <p class="text-xs text-gray-400">Eiichiro Oda</p>
+                                <span class="text-xs text-gray-400">🔥 307,949</span>
+                            </div>
+                        </div>
+                        <div class="flex space-x-3 items-start hover:bg-gray-700 p-2 -m-2 rounded transition duration-150">
+                            <img src="https://i.pinimg.com/736x/6c/54/48/6c5448de389c20e93d7bc6b25cbc0219.jpg" alt="BORUTO" class="w-15 h-20 object-cover rounded-md flex-shrink-0">
+                            <div>
+                                <h5 class="text-sm font-medium leading-tight">BORUTO - TWO BLUE VORTEX</h5>
+                                <p class="text-xs text-gray-400">Ukyou Kodachi</p>
+                                <span class="text-xs text-gray-400">🔥 288,073</span>
+                            </div>
+                        </div>
+                        <div class="flex space-x-3 items-start hover:bg-gray-700 p-2 -m-2 rounded transition duration-150">
+                            <img src="https://i.pinimg.com/1200x/56/6b/64/566b64f718649ba2be9f55bc13708725.jpg" alt="Jujutsu Kaisen" class="w-15 h-20 object-cover rounded-md flex-shrink-0">
+                            <div>
+                                <h5 class="text-sm font-medium leading-tight">Jujutsu Kaisen</h5>
+                                <p class="text-xs text-gray-400">Gege Akutami</p>
+                                <span class="text-xs text-gray-400">🔥 238,017</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+            </aside>
+            
+        </div>
+
+    </main>
+
+    <footer class="bg-custom-dark mt-10 py-4">
+        <div class="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">
+            © 2025 Mini Project Tailwind. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
